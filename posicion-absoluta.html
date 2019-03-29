@@ -22,16 +22,26 @@
             box-sizing: border-box;
         }
 
+        aside {
+            position: absolute;
+            right: 0px;
+            width: 200px;
+            background: rgb(255, 0, 230);
+            padding: 3em;
+            box-sizing: border-box;
+            height: 600px;
+        }
+
         section, header {
             /* position is static by default */
-            margin-left: 200px;
+            margin: 0 200px;
             padding: 3em;
         }
         
         header{
             background: red;
         }
-        section:nth-child(3){
+        section:nth-child(4){
             background: orangered;
         }
         section:last-of-type{
@@ -83,6 +93,12 @@
                 </li>
             </ul>
         </nav>
+
+        <aside>
+            <h2>Side Bar</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum,
+                    nisi lorem egestas odio, vitae scelerisque</p>
+        </aside>
 
         <header>
             <h1>El sitio de Kevin</h1>
