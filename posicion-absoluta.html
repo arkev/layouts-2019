@@ -12,28 +12,28 @@
         .container {
             position: relative;
         }
-
         nav {
             position: absolute;
             left: 0px;
             width: 200px;
-            background: skyblue;
+            background: #aec6cf;
+            padding: 3em;
+            box-sizing: border-box;
         }
-
-        section {
+        section, header {
             /* position is static by default */
             margin-left: 200px;
             padding: 3em;
         }
-        
-        section:first-of-type{
-            background: red;
+
+      header{
+            background: #e1f7d5;
         }
         section:nth-child(3){
-            background: orangered;
+            background: #ffbdbd;
         }
         section:last-of-type{
-            background:orange;
+            background:#f1cbff;
         }
 
         footer {
@@ -41,7 +41,7 @@
             bottom: 0;
             left: 0;
             height: 70px;
-            background-color:green;
+            background-color:yellow;
             width: 100%;
             text-align: center;
             padding: 2em;
@@ -58,7 +58,9 @@
 
 <body>
     <div class="container">
+
         <nav>
+          <h2> Menú</h2>
             <ul>
                 <li>
                     <a href="#">Inicio</a>
@@ -81,12 +83,14 @@
             </ul>
         </nav>
 
-        <section>
+
+<header>
+        <h1> El sitio de Erika</h1>
             <p>
                 El estilo <code>margin-left</code> para <code>section</code>, es para que haya espacio para
                 <code>nav</code>.
             </p>
-        </section>
+        </header>
 
         <section>
             <p>
