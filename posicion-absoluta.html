@@ -22,16 +22,27 @@
             box-sizing:border-box;
         }
 
+        aside {
+            position: absolute;
+            right: 0px;
+            width: 200px;
+            background: red;
+            padding: 3em;
+            box-sizing:border-box;
+            height: 600px
+
+        }
+
         section, header{
             /* position is static by default */
-            margin-left: 200px;
+            margin: 0 200px;
             padding: 3em;
         }
 
         header:first-of-type{
             background: #FF1071;
         }
-        section:nth-child(3){
+        section:nth-child(4){
             background: #FD0F26;
         }
         section:last-of-type{
@@ -84,6 +95,14 @@
                 </li>
             </ul>
         </nav>
+
+        <aside>
+          <h2>Side bar</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum,
+            nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor.
+          </p>
+        </aside>
 
         <header>
           <h1>El sitio de Arlet</h1>
