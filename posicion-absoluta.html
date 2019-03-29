@@ -22,16 +22,30 @@
             box-sizing: border-box;
         }
 
+        .sidebar {
+          position: relative;
+        }
+
+        aside {
+          position: absolute;
+          right: 0px;
+          width: 200px;
+          background: gray;
+          padding: 3em;
+          box-sizing: border-box;
+          height: 500px;
+        }
+
         section, header {
             /* position is static by default */
-            margin-left: 200px;
+            margin: 0 200px;
             padding: 3em;
         }
 
         header {
             background: Teal;
         }
-        section:nth-child(3){
+        section:nth-child(4){
             background: Cyan;
         }
         section:last-of-type{
@@ -83,9 +97,18 @@
                     <a href="#">Contacto</a>
                 </li>
             </ul>
-        </nav>
+              </nav>
 
-        <header>
+
+              <aside>
+                <h3>Side bar<h3>
+                  <p>
+                    COOL CROW HAS DECIDED TO KICK THY ARSE HA
+                    COOL CROW HAS WINGED THY FACE
+                  </p>
+                </aside>
+
+          <header>
             <h1>El sitio de Maolseachnaill</h1>
             <p>
                 El estilo <code>margin-left</code> para <code>section</code>, es para que haya espacio para
