@@ -17,23 +17,28 @@
             position: absolute;
             left: 0px;
             width: 200px;
-            background: skyblue;
+            background: green;
+            padding: 3em;
+            box-sizing: border-box;
         }
 
-        section {
+        section,header {
             /* position is static by default */
             margin-left: 200px;
-            padding: 3em;
+            padding: 3.5em;
         }
         
-        section:first-of-type{
-            background: red;
+        header:first-of-type{
+            background: DarkCyan;
+
+
         }
         section:nth-child(3){
-            background: orangered;
+            background: LightBlue;
+
         }
         section:last-of-type{
-            background:orange;
+            background:SeaGreen;
         }
 
         footer {
@@ -58,7 +63,9 @@
 
 <body>
     <div class="container">
+        
         <nav>
+             <h2> menu</h2>
             <ul>
                 <li>
                     <a href="#">Inicio</a>
@@ -81,12 +88,13 @@
             </ul>
         </nav>
 
-        <section>
+        <header>
+            <h1> pagina de semir</h1>
             <p>
                 El estilo <code>margin-left</code> para <code>section</code>, es para que haya espacio para
                 <code>nav</code>.
             </p>
-        </section>
+        </header>
 
         <section>
             <p>
