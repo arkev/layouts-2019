@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Layout con float</title>
+
+    <style>
+        /*Aquí va el código CSS */
+        .container {
+            display: inline-block;
+            width: 100%
+        }
+
+        nav {
+            display: inline-block;
+            width: 20%;
+            background: #CEE2A3;
+            padding: 3em;
+            box-sizing:border-box;
+            height: 600px
+        }
+
+        aside {
+            display: inline-block;
+            width: 20%;
+            background: red;
+            padding: 3em;
+            box-sizing:border-box;
+            height: 600px
+
+        }
+
+        .central section,
+        .central header {
+          /*position is static by default*/
+          padding: :3em;
+          display: inline-block;
+          box-sizing: border-box;
+          width: 100%
+        }
+
+      header{
+        background: #FF1071;
+       }
+       .central section:nth-child(2){
+           background: #FD0F26;
+        }
+
+        .central section:last-of-type{
+            background:#ADE3D3;
+        }
+
+        footer {
+            display: inline-block;
+            background-color:#53BFB2;
+            width: 100%;
+            text-align: center;
+            padding: 2em;
+            box-sizing: border-box;
+        }
+
+        body {
+            padding: 0;
+            border: 0;
+            margin: 0;
+
+        }
+        .central{
+			display: inline-block;
+			width: 60%;
+		}
+       @media (max-width: 1023px) {
+
+         /*Aquí ponemos el código para que funcione en tablets*/
+         nav {
+             width: 25%;
+             height: 700px;
+          }
+          .central {
+            width: 55%;
+          }
+          /*Aquí termina el código para que funcione en tablets*/
+
+          }
+
+          @media (max-width:767px) {
+            /*Aquí inicia el código para que funcione en celular*/
+            nav,
+            aside,
+            .central,
+            footer{
+              display: inline-block;
+              width: 100%
+            }
+            nav,
+            aside{
+              height: auto;
+            }
+            /*Aquí termina el código para que funicione en celular*/
+          }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+
+        <nav>
+          <h2>Menú</h2>
+            <ul>
+                <li>
+                    <a href="#">Inicio</a>
+                </li>
+                <li>
+                    <a href="#">Taco Menú</a>
+                </li>
+                <li>
+                    <a href="#">Lista de Pendientes</a>
+                </li>
+                <li>
+                    <a href="#">Horas</a>
+                </li>
+                <li>
+                    <a href="#">Direcciones</a>
+                </li>
+                <li>
+                    <a href="#">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+
+
+       <section class="central">
+        <header>
+          <h1>El sitio de Arlet</h1>
+            <p>
+                El estilo <code>margin-left</code> para <code>section</code>, es para que haya espacio para
+                <code>nav</code>.
+            </p>
+        </header>
+
+        <section>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum,
+                nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec
+                congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis
+                sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue.
+                Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet
+                sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non
+                fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.
+            </p>
+        </section>
+
+        <section>
+            <p>
+                Mira lo que pasa si haces la ventana de tu navegador mas pequeña. ¡Funciona!
+            </p>
+        </section>
+      </section>
+
+        <aside>
+          <h2>Side bar</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum,
+            nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor.
+          </p>
+        </aside>
+
+        <footer>
+            <p>
+                Si usas un header o footer con valor fixed, asegurate de que haya espacio para él. Yo puse un
+                <code>margin-bottom</code> en el <code>body</code>.
+            </p>
+        </footer>
+
+    </div>
+</body>
+
+</html>
