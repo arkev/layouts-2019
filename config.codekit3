@@ -17,20 +17,20 @@
 		"oAP": "/.gitattributes",
 		"oF": 0
 		},
-	"/float copia.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/float copia.html",
-		"oF": 0
-		},
 	"/float.html": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/float.html",
+		"oF": 0
+		},
+	"/inline-block.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/inline-block.html",
 		"oF": 0
 		},
 	"/posicion-absoluta.html": {
